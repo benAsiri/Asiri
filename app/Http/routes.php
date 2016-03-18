@@ -1,5 +1,9 @@
 <?php
 
+Route::get('contact','PagesController@contact');
+ROute::get('about','PagesController@about');
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,11 +15,23 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+//get mean it visit the web page------> it loads another method.
+// yooo this mean the Root of this Website ----> /
 
-Route::get('home', 'HomeController@index');
+
+
+
+Route::get('/', 'PagesController@contact');
+/*
+Route::get('contact','WelcomeController@contact');
+
+Route::get('Home', 'HomeController@home');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
+
+
 ]);
+*/
+
